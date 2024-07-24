@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historicle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Homepage -->
+        <div id="homepage" class="page visible">
+            <h1>Historicle</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="historicalFiguresNav">Historical Figures</a></li>
+                    <li><a href="#" id="soccerPlayersNav">Soccer Players</a></li>
+                    <li><a href="#" id="fictionalCharactersNav">Fictional Characters</a></li>
+                    <li><a href="#" id="musiciansNav">Musicians</a></li>
+                </ul>
+            </nav>
+            <p>Welcome to Historicle! Try to guess the figure based on the clues provided.</p>
+        </div>
+
+        <!-- Game Page -->
+        <div id="gamepage" class="page">
+            <h2>Guess the Figure</h2>
+            <p id="timeFrame"></p>
+            <p id="country"></p>
+            <p id="category"></p>
+            <p id="gender"></p>
+            <p id="fame"></p>
+            <p id="hint"></p>
+            <input type="text" id="guessInput" placeholder="Enter your guess">
+            <button id="submitGuessBtn">Submit Guess</button>
+            <button id="hintBtn">Get Hint</button>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <!-- Result Page -->
+        <div id="resultpage" class="page">
+            <h2 id="resultMessage"></h2>
+            <p id="figureInfo"></p>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

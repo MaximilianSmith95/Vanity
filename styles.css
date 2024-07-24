@@ -1,0 +1,128 @@
+/* Reset and general styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.page {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Header styles */
+#homepage h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Game page styles */
+#gamepage, #resultpage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#gamepage h2, #resultpage h2 {
+    color: #4CAF50;
+}
+
+#gamepage p {
+    margin: 10px 0;
+}
+
+#guessInput {
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitGuessBtn, #hintBtn, #playAgainBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+#submitGuessBtn:hover, #hintBtn:hover, #playAgainBtn:hover {
+    background-color: #45a049;
+}
+
+#hint {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-weight: bold;
+}
+
+/* Result page styles */
+#resultMessage {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#figureInfo {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
